@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form and Table</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1> MY  DOM FORMS</h1>
+	<form id="myForm">
+		<div class="form-details">
+			<div class="name">
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="fname" required>
+	
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lname" required>
+			</div>	
+			<div class="name">
+				<label for="address">Address:</label>
+				<input type="text" id="address" name="address" required>
+	
+				<label for="pincode">Pincode:</label>
+				<input type="text" id="pincode" name="pincode" required>
+			</div>	
+		</div>
+		<div class="">
+			<div class="form-details1">
+				<div class="gender">
+					<label for="gender">Gender:</label>
+					<select id="gender" name="gender" required>
+						<option value="">Select Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="food-items">
+					<label for="food">Choice of Food:</label>
+					<select id="food" name="food[]" multiple required>
+						<option value="">Select Food</option>
+						<option value="Burger">Burger</option>
+						<option value="Pizza">Pizza</option>
+						<option value="Pasta">Pasta</option>
+						<option value="Sandwich">Sandwich</option>
+						<option value="Noodles">Noodles</option>
+						<option value="Fried Rice">Fried Rice</option>
+						<option value="Steak">Steak</option>
+						<option value="Salad">Salad</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+		<div class="form-details">
+			<div class="name">
+				<label for="state">State:</label>
+				<input type="text" id="state" name="state" required>
+			</div>	
+			<div class="name">
+				<label for="country">Country:</label>
+				<input type="text" id="country" name="country" required>
+			</div>	
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+		</tbody>
+    </table>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
